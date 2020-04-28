@@ -1,6 +1,6 @@
 package de.springboot.controller;
 
-import de.springboot.model.StackOverflowWebsite;
+import de.springboot.model.StackoverflowWebsite;
 import de.springboot.service.StackOverflowService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +16,7 @@ public class StackOverflowController {
     private StackOverflowService stackOverflowService;
 
     @RequestMapping
-    public List<StackOverflowWebsite> getListOfProviders(){
+    public List<StackoverflowWebsite> getListOfProviders(){
         return stackOverflowService.findAll();
     }
 }
